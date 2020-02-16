@@ -1,0 +1,46 @@
+.main-header {
+    width: 100%;
+    min-height: 320px;
+    background: url('../img/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main-header-inner {
+        height: 170px;
+        width: 170px;
+        background: #fff;
+        border: 3px solid #000;
+    }
+
+    .main-header-text {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        @include vertical-center();
+
+        p {
+            padding: 0;
+            margin: 0;
+            letter-spacing: 0.9px;
+        }
+
+        #intro-first {
+            font-size: 20px;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 10px;
+        }
+
+        #intro-second {
+            padding-top: 10px;
+            font-size: 18px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

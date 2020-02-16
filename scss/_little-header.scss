@@ -1,0 +1,15 @@
+.little-header {
+    width: 100%;
+    height: 30px;
+    background: #000;
+
+    p {
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: 2.5px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        @include vertical-center();
+    }
+}
