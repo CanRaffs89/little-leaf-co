@@ -1,15 +1,24 @@
 .little-header {
     width: 100%;
-    height: 30px;
+    height: 40px;
     background: #000;
 
     p {
         color: #fff;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 2.5px;
         margin: 0;
         padding: 0;
         text-align: center;
         @include vertical-center();
+    }
+
+    a {
+        display: inline-block;
+        height: 14px;
+        width: 7px;
+        background: url('../img/arrow.svg');
+        background-size: cover;
+        transform: translateY(2px);
     }
 }

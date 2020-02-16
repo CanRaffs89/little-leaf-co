@@ -1,0 +1,54 @@
+.feature-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    height: 250px;
+    width: 250px;
+    margin: 17px 0;
+    
+    .section-inner {
+        height: 150px;
+        width: 150px;
+        background: #fff;
+        border: #000 solid 3px;
+        margin: 0 auto;
+        @include vertical-center();
+
+        .section-text {
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            @include vertical-center();
+            
+            a {
+                color: #000;
+
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+#section-shop {
+    margin-top: 35px;
+    background: url('../img/section_image_01.jpg');
+    background-size: cover;
+}
+
+#section-stock {
+    background: url('../img/section_image_02.jpg');
+    background-size: cover;
+}
+
+#section-about {
+    margin-bottom: 35px;
+    background: url('../img/section_image_03.jpg');
+    background-size: cover;
+}

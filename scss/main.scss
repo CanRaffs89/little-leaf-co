@@ -4,10 +4,18 @@
 }
 
 body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+body, button, h1, p {
     font-family: 'Futura';
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -27,3 +35,5 @@ body {
 @import 'logo-header';
 @import 'little-header';
 @import 'main-header';
+@import 'section';
+@import 'footer';
