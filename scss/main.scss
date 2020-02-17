@@ -4,7 +4,8 @@
 }
 
 body {
-    height: 100vh;
+    height: calc(100% - 30px);
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -37,3 +38,4 @@ a {
 @import 'main-header';
 @import 'section';
 @import 'footer';
+@import 'side-menu';
