@@ -44,21 +44,31 @@ a {
 
 .footer-menu ul li {
   list-style: none;
+  cursor: pointer;
+}
+
+.footer-menu ul #hamburger, .footer-menu ul #hamburger-open {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-menu ul #hamburger {
-  height: 14px;
+  height: 15px;
   width: 20px;
-  background: url("../img/menu_close.svg");
-  background-size: cover;
+  margin-top: 3.5px;
 }
 
-.footer-menu ul #hamburger-open {
-  height: 2px;
+.footer-menu ul #hamburger div {
   width: 20px;
-  background: url("../img/menu_open.svg");
-  background-size: cover;
-  display: none;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 4px;
+}
+
+.footer-menu ul #hamburger div.hidden-on-active {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
 }
 
 .footer-menu ul #search {

@@ -13,25 +13,41 @@
 
         li {
             list-style: none;
+            cursor: pointer;
+        }
+
+        #hamburger, #hamburger-open {
+            transition: all 0.3s ease-in-out;
         }
     
         #hamburger {
-            height: 14px;
+            height: 15px;
             width: 20px;
-            background: url('../img/menu_close.svg');
-            background-size: cover;
+            margin-top: 3.5px;
+            // background: url('../img/menu_close.svg');
+            // background-size: cover;
+
+            div {
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                margin-bottom: 4px;
+
+                &.hidden-on-active {
+                    transform: scale(0);
+                    opacity: 0;
+                }
+            }
         }
 
-        #hamburger-open {
-            height: 2px;
-            width: 20px;
-            background: url('../img/menu_open.svg');
-            background-size: cover;
-            // position: absolute;
-            // left: 43px;
-            // bottom: 26px;
-            display: none;
-        }
+        // #hamburger-open {
+        //     height: 2px;
+        //     width: 20px;
+        //     background: url('../img/menu_open.svg');
+        //     background-size: cover;
+        //     margin-top: 9px;
+        //     display: none;
+        // }
     
         #search {
             height: 20px;
