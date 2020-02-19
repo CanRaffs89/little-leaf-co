@@ -6,7 +6,8 @@
 
 .section {
     height: 250px;
-    width: 250px;
+    min-width: 250px;
+    width: 80%;
     margin: 17px 0;
     
     .section-inner {
@@ -18,7 +19,7 @@
         @include vertical-center();
 
         .section-text {
-            font-size: 24px;
+            font-size: 1.5rem;
             letter-spacing: 2px;
             text-align: center;
             width: 80%;
@@ -51,4 +52,42 @@
     margin-bottom: 35px;
     background: url('../img/section_image_03.jpg');
     background-size: cover;
+}
+
+@media (min-width: 850px) {
+    .feature-sections {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .section {
+        height: 300px;
+    }
+
+    #section-stock {
+        margin: 25px 0;
+    }
+
+    #section-shop, #section-about {
+        margin: 25px 25px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section {
+        height: 350px;
+
+        .section-inner {
+            height: 175px;
+            width: 175px;
+
+            .section-text {
+                font-size: 1.75rem;
+            }
+        }
+    }
+
+    #section-shop {
+        margin-left: 50px;
+    }
 }

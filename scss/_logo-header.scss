@@ -12,3 +12,14 @@
         @include vertical-center();
     }
 }
+
+@media (min-width: 1000px) {
+    .logo-header {
+        height: 70px;
+
+        a {
+            height: 62px;
+            width: 142px;
+        }
+    }
+}

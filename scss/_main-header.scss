@@ -29,14 +29,14 @@
         }
 
         #intro-first {
-            font-size: 20px;
+            font-size: 1.25rem;
             border-bottom: 1.5px solid #000;
             padding-bottom: 10px;
         }
 
         #intro-second {
             padding-top: 10px;
-            font-size: 18px;
+            font-size: 1.125rem;
 
             span {
                 font-weight: bold;
@@ -52,7 +52,7 @@
 
         a {
             color: #fff;
-            font-size: 16px;
+            font-size: 1rem;
             letter-spacing: 3.5px;
             margin: 0;
             padding: 0;
@@ -60,3 +60,36 @@
         }
     }
 }
+
+@media (min-width: 1000px) {
+    .main-header {
+        height: 65vh;
+
+        .main-header-inner {
+            height: 250px;
+            width: 250px;
+        }
+
+        .main-header-text {
+            #intro-first {
+                font-size: 1.5rem;
+                border-bottom: 1.5px solid #000;
+                
+            }
+    
+            #intro-second {
+                font-size: 1.3rem;
+            }
+        }
+
+        .main-header-button {
+            width: 250px;
+            height: 45px;
+            margin-top: 25px;
+    
+            a {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}    
