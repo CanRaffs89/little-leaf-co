@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
 :root {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -11,7 +13,7 @@ body {
 }
 
 body, button, h1, p {
-    font-family: 'Futura';
+    font-family: 'Jost', 'Arial';
     font-weight: 400;
 }
 
